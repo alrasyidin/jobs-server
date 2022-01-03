@@ -1,0 +1,42 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"engines": {
+		"node": ">=14"
+	},
+	"scripts": {
+		"start": "nodemon ./src/index.js",
+		"lint": "eslint --fix ./src",
+		"db:migration": "npx sequelize db:migrate"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"axios": "^0.24.0",
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.2",
+		"faker": "^5.5.3",
+		"joi": "^17.5.0",
+		"jsonwebtoken": "^8.5.1",
+		"morgan": "^1.10.0",
+		"pg": "^8.7.1",
+		"pg-hstore": "^2.3.4",
+		"sequelize": "^7.0.0-alpha.4"
+	},
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-node": "^4.1.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"nodemon": "^2.0.15",
+		"prettier": "^2.5.1"
+	}
+}
